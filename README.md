@@ -1,27 +1,39 @@
-# TIME
+# TIME - Zeitstempelsystem
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
-## Development server
+============
+[![GitHub Stars](https://img.shields.io/github/stars/echoEscape/time.svg)](https://github.com/echoEscape/time/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/echoEscape/time.svg)](https://github.com/echoEscape/time/issues) [![Current Version](https://img.shields.io/badge/version-0.0.0-yellow.svg)](https://github.com/echoEscape/time)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+TIME ist ein Zeitstempelsystem für Unternehmen.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+1. Klonen Sie das Repository:
+   ```bash
+   git clone https://github.com/echoEscape/time.git````
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Navigieren Sie in das Projektverzeichnis:
+    ```bash
+    cd time````
 
-## Running unit tests
+3. Installieren Sie die erforderlichen Abhängigkeiten:
+    ```bash
+    npm install```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Nutzung
+Starten Sie die Anwendung
+    ```bash
+    npm start````
 
-## Running end-to-end tests
+Öffnen Sie Ihren Browser und navigieren Sie zu http://localhost:4200, um die Anwendung zu verwenden.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Beiträge
 
-## Further help
+Beiträge sind willkommen! Bitte öffnen Sie ein Issue, um Fehler zu melden oder neue Funktionen vorzuschlagen, und erstellen Sie Pull Requests für Ihre Änderungen.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Lizenz
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der [LICENSE]()-Datei.
