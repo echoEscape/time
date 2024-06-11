@@ -44,9 +44,9 @@ Ziel von TIME soll es sein, folgende Punkte effektiv umsetzen zu können:
 ## Nutzung
 
 Starten Sie die Anwendung:
-    ```bash
-    npm install
-    ```
+```bash
+ng serve
+```
 
 Öffnen Sie Ihren Browser und navigieren Sie zu http://localhost:4200, um die Anwendung zu verwenden.
 
