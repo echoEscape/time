@@ -1,3 +1,15 @@
+:root{
+    --color-error: #ef476f;
+    --color-warning: #ffd166;
+    --color-ok: #06d6a0;
+    --color-info: #118ab2;
+
+    --color-main: #0b1e46;
+
+    --color-font-lightBG: #333333;
+    --color-font-darkBG: #f6f6f6;
+}
+
 html, body{
     padding: 0%;
     margin: 0%;
@@ -9,6 +21,6 @@ html, body, app-root{
 }
 
 app-root{
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction: row;
 }
