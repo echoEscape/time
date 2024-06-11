@@ -1,4 +1,35 @@
-app-navigation{
+:host{
     display: flex;
     flex-direction: column;
+
+    width: 3.5em;
+
+    background-color: lightblue;
+}
+
+ul{
+    margin: 1em 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+ul>li{
+    cursor: pointer;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+.nav-name{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: var(--size-nav-font);
+    margin: 0;
+    padding-top: 0.25rem;
 }

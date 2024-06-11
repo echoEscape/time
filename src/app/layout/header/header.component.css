@@ -1,4 +1,8 @@
-app-header{
+:host{
     display: flex;
     flex-direction: row;
+
+    height: 3.5em;
+
+    background-color: aqua;
 }
