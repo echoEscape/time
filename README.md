@@ -14,13 +14,8 @@ TIME ist ein Zeitstempelsystem für die Nutzung innerhalb Unternehmen, egal welc
 
 Ziel von TIME soll es sein, folgende Punkte effektiv umsetzen zu können:
 - Genauigkeit und Transparenz in der Arbeitszeiterfassung
-- Produktivitätsanalyse und Leistungsbewertung
-- Kosteneffizienz und Gehaltsabrechnung
 - Rechtliche Absicherung und Compliance
 - Flexibilität und Unterstützung für Remote-Arbeit
-- Effiziente Ressourcenplanung
-- Integration und Automatisierung
-- Mitarbeitermotivation und Fairness
 
 ---
 
