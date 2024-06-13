@@ -6,11 +6,14 @@
 
     --color-main: #0b1e46;
 
+    --color-main-accent: #25417c;
+    --color-sub-accent: white;
+
     --color-font-lightBG: #333333;
     --color-font-darkBG: #f6f6f6;
 
     --size-nav-icon: 1.75rem;
-    --size-nav-font: 0.5rem;
+    --size-nav-font: 0.7rem;
 }
 
 .material-symbols-outlined {
