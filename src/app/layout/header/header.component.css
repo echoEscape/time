@@ -2,6 +2,60 @@
     display: flex;
     flex-direction: row;
 
-    height: 3.5em;
+    height: 5em;
+}
 
+ul{
+    margin: 0 0.5em 0 0;
+    padding: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+    list-style-type: none;
+    
+}
+
+ul>:nth-child(1){
+    margin-left:auto;
+}
+
+ul>:last-child{
+    margin-right: 1em;
+}
+
+ul>li{
+    cursor: pointer;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    width: 2.5em;
+    height: 2.5em;
+
+    margin: 0.3em 0 0.3em 0;
+    padding: 0.3em;
+
+    border-radius: 100%;
+}
+
+.header-icon{
+    font-size: var(--size-header-icon);
+    font-variation-settings: var(--icons-outline);
+    color: var(--color-main);
+}
+
+/* Circle background for icon */
+ul>li:hover{
+    background-color: var(--color-main-accent);
+}
+
+/* Icon */
+ul>li:hover span{
+    color: var(--color-sub);
+
+    font-variation-settings: var(--icons-solid);
 }

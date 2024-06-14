@@ -1,10 +1,8 @@
 :host{
+    width: 6em;
+    
     display: flex;
     flex-direction: column;
-
-    width: 6em;
-
-    background-color: var(--color-main);
 }
 
 ul{
@@ -42,6 +40,7 @@ ul>li{
 .nav-icon{
     color: #aaa;
     font-size: var(--size-nav-icon);
+    font-variation-settings: var(--icons-outline);
 }
 
 /* Circle background for icon */
@@ -53,10 +52,6 @@ ul>li:hover{
 ul>li:hover span{
     color: rgb(23, 19, 42);
 
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
+    font-variation-settings: var(--icons-solid);
 }
 
