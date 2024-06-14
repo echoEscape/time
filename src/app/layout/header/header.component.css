@@ -1,12 +1,11 @@
 :host{
+    height: 5em;
+    
     display: flex;
     flex-direction: row;
-
-    height: 5em;
 }
 
 ul{
-    margin: 0 0.5em 0 0;
     padding: 0;
     width: 100%;
 
@@ -38,8 +37,6 @@ ul>li{
 
     margin: 0.3em 0 0.3em 0;
     padding: 0.3em;
-
-    border-radius: 100%;
 }
 
 .header-icon{
@@ -48,14 +45,8 @@ ul>li{
     color: var(--color-main);
 }
 
-/* Circle background for icon */
-ul>li:hover{
-    background-color: var(--color-main-accent);
-}
 
 /* Icon */
 ul>li:hover span{
-    color: var(--color-sub);
-
     font-variation-settings: var(--icons-solid);
 }

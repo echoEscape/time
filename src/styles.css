@@ -5,7 +5,7 @@
     --color-info: #118ab2;
 
     --color-main: rgb(23, 19, 42);
-    --color-sub: #ccc;
+    --color-sub: #eee;
 
     --color-main-accent: rgb(94, 98, 129);
     --color-sub-accent: rgb(228, 228, 228);
@@ -46,4 +46,11 @@ html, body, app-root{
 app-root{
     display:flex;
     flex-direction: row;
+}
+
+h1, h2{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
