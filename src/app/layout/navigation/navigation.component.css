@@ -1,16 +1,36 @@
 :host{
+    width: auto;
+    display: flex;
+}
+
+#nav-symbols{
     width: 6em;
     
     display: flex;
     flex-direction: column;
 }
 
-ul{
-    margin: 0.5em 0 0 0;
-    padding: 0;
-    height: 100vh;
+#nav-names{
+    width: 10em;
+    
     display: flex;
     flex-direction: column;
+
+    position:absolute;
+    left: 6em;
+    z-index: 10;
+
+    background-color: var(--color-main-accent);
+}
+
+ul{
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0.5em 0 0 0;
+
+    display: flex;
+    justify-items: center;
     align-items: center;
 
     list-style-type: none;

@@ -8,7 +8,9 @@
     flex-direction: column;
     flex-grow: 1;
 
-    border-radius: 1em 0 0 1em;
     background-color: var(--color-sub);
     box-shadow: 15px 0px 50px 2px #1e042d;
+    
+    border-radius: 1em 0 0 1em;
+    border-left: solid white 1px;
 }
