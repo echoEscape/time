@@ -1,52 +1,50 @@
-:host{
-    height: 5em;
-    
-    display: flex;
-    flex-direction: row;
+:host {
+  height: 5em;
+
+  display: flex;
+  flex-direction: row;
 }
 
-ul{
-    padding: 0;
-    width: 100%;
+ul {
+  padding: 0;
+  width: 100%;
 
-    display: flex;
-    flex-direction:row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    list-style-type: none;
-    
+  list-style-type: none;
 }
 
-ul>:nth-child(1){
-    margin-left:auto;
+ul > :nth-child(1) {
+  margin-left: auto;
 }
 
-ul>:last-child{
-    margin-right: 1em;
+ul > :last-child {
+  margin-right: 1em;
 }
 
-ul>li{
-    cursor: pointer;
+ul > li {
+  cursor: pointer;
 
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 
-    width: 2.5em;
-    height: 2.5em;
+  width: 2.5em;
+  height: 2.5em;
 
-    margin: 0.3em 0 0.3em 0;
-    padding: 0.3em;
+  margin: 0.3em 0 0.3em 0;
+  padding: 0.3em;
 }
 
-.header-icon{
-    font-size: var(--size-header-icon);
-    font-variation-settings: var(--icons-outline);
-    color: var(--color-main);
+.header-icon {
+  font-size: var(--size-header-icon);
+  font-variation-settings: var(--icons-outline);
+  color: var(--color-main);
 }
-
 
 /* Icon */
-ul>li:hover span{
-    font-variation-settings: var(--icons-solid);
+ul > li:hover span {
+  font-variation-settings: var(--icons-solid);
 }
