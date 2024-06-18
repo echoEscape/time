@@ -9,8 +9,6 @@ p {
 
 #blackout {
   position: absolute;
-  left: 6rem;
-
   width: 100vw;
   height: 100vh;
 
@@ -32,22 +30,22 @@ p {
 }
 
 #nav-symbols {
-  width: 6rem;
+  width: 4rem;
 
   display: flex;
   align-items: center;
+
+  z-index: 20;
 }
 
 #nav-names {
   position: absolute;
-  left: 6rem;
-  z-index: 20;
+  left: 4rem;
+  z-index: 30;
 
   padding-right: 2em;
 
   background-color: var(--color-main);
-
-  border-radius: 0 1em 1em 0;
 }
 
 ul {
@@ -73,7 +71,7 @@ ul > :last-child {
 
 ul > li {
   cursor: pointer;
-  height: 2.5rem;
+  height: 2rem;
 
   margin: 0.3em 0 0.3em 0;
   padding: 0.3em;
@@ -82,10 +80,17 @@ ul > li {
   align-items: center;
 }
 
+.app-icon,
+.nav-icon{
+    color: #aaa;
+    font-variation-settings: var(--icons-outline);
+    border-radius: 100%;
+}
+.app-icon{
+    font-size: var(--size-header-icon);
+}
 .nav-icon {
-  color: #aaa;
   font-size: var(--size-nav-icon);
-  font-variation-settings: var(--icons-outline);
 }
 
 #nav-symbols > li {
@@ -95,34 +100,39 @@ ul > li {
 
   width: 2.5rem;
 
-  border-radius: 100%;
+  border-radius: 0.75em 0 0 0.75em;
 }
 
-/* Circle background for icon */
+/* Background behind icon */
 #nav-symbols > li:hover {
-  background-color: var(--color-sub-accent);
+  background-color: #d3f2d9;
 }
 
 /* Icon */
 #nav-symbols > li:hover span {
-  color: rgb(23, 19, 42);
+  color: rgb(45, 162, 107);
 
   font-variation-settings: var(--icons-solid);
 }
 
 #nav-names > li {
   color: #aaa;
+  border-radius: 0 0.5em 0.5em 0;
+  padding-right: 2em;
 }
 
 #nav-names > li:hover {
-  color: black;
-  background-color: #aaa;
+  color: rgb(45, 162, 107);
+  background-color: #aabfae;
+}
+
+#nav-active-line{
+    z-index: 20;
 }
 
 #nav-active-line > li {
   padding-right: 0;
-  padding-left: 0.2em;
-  background-color: rgb(45, 148, 100);
+  background-color: rgb(45, 162, 107);
 }
 
 .project-line {
