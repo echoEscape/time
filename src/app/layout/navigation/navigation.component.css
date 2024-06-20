@@ -29,19 +29,17 @@ nav ul > :last-child {
 }
 
 nav ul > p{
+  margin: 0 0 0.25rem 1rem;
+  
   content:"";
-
-  margin: 0 0 0.5rem 1rem;
-
   font-size: 0.75rem;
-}
-
-.visible-p{
+  
   color: #aaaaaa8a;
+  border-bottom: 0.1rem solid #aaaaaa8a;
 }
 
-.transparent-p{
-  color: #aaaaaa00;
+.short-border{
+  width: fit-content;
 }
 
 nav ul li{
