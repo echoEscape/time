@@ -1,4 +1,4 @@
-:host {
+/*:host {
   width: auto;
   display: flex;
   background-color: #001927;
@@ -107,13 +107,10 @@ ul > li {
     border-radius: 0.75em;
 }
 
-
-/* Background behind icon */
 #nav-symbols > li:hover {
   background-color: #0086ad;
 }
 
-/* Icon */
 #nav-symbols > li:hover span {
   color: #daf8e3;
 
@@ -145,7 +142,6 @@ ul > li {
   opacity: 0;
 }
 
-/* Active Nav Icon w/ selected module */
 .nav-icon-round{
     width: 2rem !important;
     border-radius: 0.75rem !important;
@@ -154,5 +150,4 @@ ul > li {
 
 .nav-icon-round > span{
     color: #daf8e3;
-
-}
+}*/
