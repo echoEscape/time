@@ -1,3 +1,32 @@
+<nav (mouseover)="nav_exp = true" (mouseleave)="nav_exp = false">
+  <ul>
+    <li title="Alle Programme">
+      <span class="material-icons app-icon" id="nav-apps">apps</span>
+      @if(nav_exp){<p>TIME</p>};
+    </li>
+    <li title="Übersicht">
+      <span class="material-symbols-outlined nav-icon" id="nav-overview">dashboard</span>
+      @if(nav_exp){<p>Übersicht</p>};
+    </li>
+    <li title="Historie">
+      <span class="material-symbols-outlined nav-icon" id="nav-history">fast_rewind</span>
+      @if(nav_exp){<p>Historie</p>};
+    </li>
+    <li title="Urlaub">
+      <span class="material-symbols-outlined nav-icon" id="nav-holiday">clear_day</span>
+      @if(nav_exp){<p>Urlaub</p>};
+    </li>
+    <li title="Einstellungen" id="nav-end">
+      <span class="material-symbols-outlined nav-icon" id="nav-settings">settings</span>
+      @if(nav_exp){<p>Einstellungen</p>};
+    </li>
+    <li title="Support">
+      <span class="material-symbols-outlined nav-icon" id="nav-suppport">contact_support</span>
+      @if(nav_exp){<p>Support</p>};
+    </li>
+  </ul>
+</nav>
+
 <!--
 <ul id="nav-active-line" (mouseover)="nav_exp = false">
   <li class="project-line"></li>
