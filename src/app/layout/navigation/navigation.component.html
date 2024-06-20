@@ -2,27 +2,31 @@
   <ul>
     <li title="Alle Programme">
       <span class="material-icons app-icon" id="nav-apps">apps</span>
-      @if(nav_exp){<p>TIME</p>};
+      @if(nav_exp){<p>Programme</p>}
     </li>
+
+    <p [className]="nav_exp ? 'visible-p' : 'transparent-p'">MENÜ</p>
     <li title="Übersicht">
       <span class="material-symbols-outlined nav-icon" id="nav-overview">dashboard</span>
-      @if(nav_exp){<p>Übersicht</p>};
+      @if(nav_exp){<p>Übersicht</p>}
     </li>
     <li title="Historie">
       <span class="material-symbols-outlined nav-icon" id="nav-history">fast_rewind</span>
-      @if(nav_exp){<p>Historie</p>};
+      @if(nav_exp){<p>Historie</p>}
     </li>
     <li title="Urlaub">
       <span class="material-symbols-outlined nav-icon" id="nav-holiday">clear_day</span>
-      @if(nav_exp){<p>Urlaub</p>};
+      @if(nav_exp){<p>Urlaub</p>}
     </li>
-    <li title="Einstellungen" id="nav-end">
+
+    <p [className]="nav_exp ? 'visible-p' : 'transparent-p'" id="nav-end">EXTRA</p>
+    <li title="Einstellungen">
       <span class="material-symbols-outlined nav-icon" id="nav-settings">settings</span>
-      @if(nav_exp){<p>Einstellungen</p>};
+      @if(nav_exp){<p>Einstellungen</p>}
     </li>
     <li title="Support">
-      <span class="material-symbols-outlined nav-icon" id="nav-suppport">contact_support</span>
-      @if(nav_exp){<p>Support</p>};
+      <span class="material-symbols-outlined nav-icon" id="nav-suppport">headset_mic</span>
+      @if(nav_exp){<p>Support</p>}
     </li>
   </ul>
 </nav>

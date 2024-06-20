@@ -1,5 +1,7 @@
 :host{
-  background-color: #001927;
+  position: sticky !important;
+  top: 0;
+  left: 0;
 }
 
 nav ul{
@@ -14,7 +16,8 @@ nav ul{
 }
 
 nav ul > :first-child {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 nav ul > #nav-end {
@@ -22,7 +25,23 @@ nav ul > #nav-end {
 }
 
 nav ul > :last-child {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+nav ul > p{
+  content:"";
+
+  margin: 0 0 0.5rem 1rem;
+
+  font-size: 0.75rem;
+}
+
+.visible-p{
+  color: #aaaaaa8a;
+}
+
+.transparent-p{
+  color: #aaaaaa00;
 }
 
 nav ul li{
