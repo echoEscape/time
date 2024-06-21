@@ -17,7 +17,6 @@ nav ul{
 
 nav ul > :first-child {
   margin-top: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 nav ul > #nav-end {
@@ -28,25 +27,11 @@ nav ul > :last-child {
   margin-bottom: 1.5rem;
 }
 
-nav ul > p{
-  margin: 0 0 0.25rem 1rem;
-  
-  content:"";
-  font-size: 0.75rem;
-  
-  color: #aaaaaa8a;
-  border-bottom: 0.1rem solid #aaaaaa8a;
-}
-
-.short-border{
-  width: fit-content;
-}
-
 nav ul li{
   display:flex;
   align-items: center;
 
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.25rem 1rem 0.25rem 1rem;
   border-radius: 1rem;
 
   cursor: pointer;
@@ -74,14 +59,12 @@ nav ul li:hover::before{
 
 nav ul li span,
 nav ul li p{
-  color: #aaa;
+  color: #aaaaaa80;
 }
 
 nav ul li span{
   padding: 0.5rem;
   border-radius: 100%;
-  
-  background-color: rgba(71, 133, 133, 0.2);
 
   font-size: var(--size-nav-icon);
   font-variation-settings: var(--icons-outline);

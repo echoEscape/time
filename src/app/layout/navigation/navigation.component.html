@@ -5,7 +5,6 @@
       @if(nav_exp){<p>Programme</p>}
     </li>
 
-    <p [class.short-border]="!nav_exp">MENÜ</p>
     <li title="Übersicht">
       <span class="material-symbols-outlined nav-icon" id="nav-overview">dashboard</span>
       @if(nav_exp){<p>Übersicht</p>}
@@ -18,9 +17,16 @@
       <span class="material-symbols-outlined nav-icon" id="nav-holiday">clear_day</span>
       @if(nav_exp){<p>Urlaub</p>}
     </li>
+    <li title="Krankmeldungen">
+      <span class="material-symbols-outlined nav-icon" id="nav-sickleave">cardiology</span>
+      @if(nav_exp){<p>Krankmeldungen</p>}
+    </li>
+    <li title="Schichtplanung">
+      <span class="material-symbols-outlined nav-icon" id="nav-shiftplan">view_timeline</span>
+      @if(nav_exp){<p>Schichtplanung</p>}
+    </li>
 
-    <p [class.short-border]="!nav_exp" id="nav-end">EXTRA</p>
-    <li title="Einstellungen">
+    <li title="Einstellungen" id="nav-end">
       <span class="material-symbols-outlined nav-icon" id="nav-settings">settings</span>
       @if(nav_exp){<p>Einstellungen</p>}
     </li>
