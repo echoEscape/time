@@ -11,6 +11,7 @@ header,
 ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   margin-left: auto;
   padding: 0;
@@ -19,20 +20,15 @@ ul {
 header ul li {
   cursor: pointer;
 
-  display:flex;
-  align-items: center;
-
-  margin: 0.25rem 0 0.25rem 0;
-  padding: 0.25rem;
+  margin: 0 0.5rem 0 0.5rem;
 }
 
-.header-icon {
+header ul li span{
   font-size: var(--size-header-icon);
   font-variation-settings: var(--icons-outline);
   color: var(--color-main);
 }
 
-/* Icon */
 header ul li:hover span {
   font-variation-settings: var(--icons-solid);
 }
