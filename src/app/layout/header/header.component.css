@@ -1,41 +1,29 @@
-:host {
-  height: 5em;
-
-  display: flex;
-  flex-direction: row;
+header{
+  width: 100%;
+  height: 5rem;
 }
 
-ul {
-  padding: 0;
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
+header ul{
   list-style-type: none;
 }
 
-ul > :nth-child(1) {
+header, 
+ul {
+  display: flex;
+  flex-direction: row;
+
   margin-left: auto;
+  padding: 0;
 }
 
-ul > :last-child {
-  margin-right: 1em;
-}
-
-ul > li {
+header ul li {
   cursor: pointer;
 
-  display: grid;
-  justify-items: center;
+  display:flex;
   align-items: center;
 
-  width: 2.5em;
-  height: 2.5em;
-
-  margin: 0.3em 0 0.3em 0;
-  padding: 0.3em;
+  margin: 0.25rem 0 0.25rem 0;
+  padding: 0.25rem;
 }
 
 .header-icon {
@@ -45,6 +33,6 @@ ul > li {
 }
 
 /* Icon */
-ul > li:hover span {
+header ul li:hover span {
   font-variation-settings: var(--icons-solid);
 }
