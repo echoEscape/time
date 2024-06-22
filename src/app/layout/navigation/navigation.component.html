@@ -1,54 +1,76 @@
 <nav (mouseover)="nav_exp = true" (mouseleave)="nav_exp = false">
   <ul>
     <li title="Alle Programme">
-      <span class="material-icons app-icon" id="nav-apps">apps</span>
-      @if(nav_exp){<p>Programme</p>}
+      <a routerLink="/" routerLinkActive="active">
+        <span class="material-icons app-icon" id="nav-apps">apps</span>
+        @if(nav_exp){<p>Programme</p>}
+      </a>
     </li>
 
     <hr>
     <li title="Übersicht">
-      <span class="material-symbols-outlined nav-icon" id="nav-overview">dashboard</span>
-      @if(nav_exp){<p>Übersicht</p>}
+      <a routerLink="./layout/components/overview" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-overview">dashboard</span>
+        @if(nav_exp){<p>Übersicht</p>}
+      </a>
     </li>
     <li title="Historie">
-      <span class="material-symbols-outlined nav-icon" id="nav-history">fast_rewind</span>
-      @if(nav_exp){<p>Historie</p>}
+      <a routerLink="./layout/components/history" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-history">fast_rewind</span>
+        @if(nav_exp){<p>Historie</p>}
+      </a>
     </li>
     <li title="Schichtplanung">
-      <span class="material-symbols-outlined nav-icon" id="nav-shiftplan">view_timeline</span>
-      @if(nav_exp){<p>Schichtplanung</p>}
+      <a routerLink="./layout/components/shiftplan" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-shiftplan">view_timeline</span>
+        @if(nav_exp){<p>Schichtplanung</p>}
+      </a>
     </li>
     <li title="Urlaub">
-      <span class="material-symbols-outlined nav-icon" id="nav-holiday">clear_day</span>
-      @if(nav_exp){<p>Urlaub</p>}
+      <a routerLink=".layout/components/holiday" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-holiday">clear_day</span>
+        @if(nav_exp){<p>Urlaub</p>}
+      </a>
     </li>
     <li title="Krankmeldungen">
-      <span class="material-symbols-outlined nav-icon" id="nav-sickleave">cardiology</span>
-      @if(nav_exp){<p>Krankmeldungen</p>}
+      <a routerLink="./layout/components/sickleave" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-sickleave">cardiology</span>
+        @if(nav_exp){<p>Krankmeldungen</p>}
+      </a>
     </li>
 
     <hr>
     <li title="Mitarbeiterübersicht">
-      <span class="material-symbols-outlined nav-icon" id="nav-employeeoverview">groups</span>
-      @if(nav_exp){<p>Mitarbeiter</p>}
-    </li>
-    <li title="Verstöße">
-      <span class="material-symbols-outlined nav-icon" id="nav-violation">warning</span>
-      @if(nav_exp){<p>Verstöße</p>}
+      <a routerLink="./layout/components/employees" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-employees">groups</span>
+        @if(nav_exp){<p>Mitarbeiter</p>}
+      </a>
     </li>
     <li title="Beantragungen">
-      <span class="material-symbols-outlined nav-icon" id="nav-violation">inventory</span>
-      @if(nav_exp){<p>Beantragungen</p>}
+      <a routerLink="./layout/components/requests" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-requests">inventory</span>
+        @if(nav_exp){<p>Beantragungen</p>}
+      </a>
+    </li>
+    <li title="Verstöße">
+      <a routerLink=".layout/components/violations" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-violations">warning</span>
+        @if(nav_exp){<p>Verstöße</p>}
+      </a>
     </li>
 
     <hr id="nav-end">
     <li title="Einstellungen">
-      <span class="material-symbols-outlined nav-icon" id="nav-settings">settings</span>
-      @if(nav_exp){<p>Einstellungen</p>}
+      <a routerLink=".layout/components/settings" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-settings">settings</span>
+        @if(nav_exp){<p>Einstellungen</p>}
+      </a>
     </li>
     <li title="Support">
-      <span class="material-symbols-outlined nav-icon" id="nav-suppport">headset_mic</span>
-      @if(nav_exp){<p>Support</p>}
+      <a routerLink=".layout/components/support" routerLinkActive="active">
+        <span class="material-symbols-outlined nav-icon" id="nav-support">headset_mic</span>
+        @if(nav_exp){<p>Support</p>}
+      </a>
     </li>
   </ul>
 </nav>
