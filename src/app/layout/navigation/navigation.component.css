@@ -37,6 +37,9 @@ nav ul > :last-child {
 }
 
 nav ul li{
+  display:flex;
+  align-items: center;
+
   margin: 0.25rem 1rem 0.25rem 1rem;
   border-radius: 1rem;
 
