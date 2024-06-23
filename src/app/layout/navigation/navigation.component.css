@@ -46,7 +46,8 @@ nav ul li{
   cursor: pointer;
 }
 
-nav ul li:hover{
+nav ul li:hover,
+nav ul li:has(a.active){
   background-color: #0085ad50;
 }
 
@@ -62,7 +63,8 @@ nav ul li::before{
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-nav ul li:hover::before{
+nav ul li:hover::before,
+nav ul li:has(a.active)::before{
   background-color: #daf8e3;
 }
 
@@ -84,11 +86,14 @@ nav ul li p{
 }
 
 nav ul li:hover span,
-nav ul li:hover p{
+nav ul li:hover p,
+nav ul li a.active span,
+nav ul li a.active p{
   color: #daf8e3;
 }
 
-nav ul li:hover span{
+nav ul li:hover span,
+nav ul li a.active span{
   background-color: rgba(71, 133, 133, 0.3);
   
   font-variation-settings: var(--icons-solid);

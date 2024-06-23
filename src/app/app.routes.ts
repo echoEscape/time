@@ -13,7 +13,7 @@ import { SettingsComponent } from './layout/components/settings/settings.compone
 import { SupportComponent } from './layout/components/support/support.component';
 
 export const routes: Routes = [
-    {path: '', component: OverviewComponent,},
+    {path: '', component: WireframeComponent,},
     {path: 'overview', component: OverviewComponent},
     {path: 'history', component: HistoryComponent},
     {path: 'shiftplan', component: ShiftplanComponent},
