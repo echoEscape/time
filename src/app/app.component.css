@@ -3,8 +3,9 @@
     top: 0;
     left: 5rem;
     height: 100vh;
-    width: calc(100vw - 10rem);
-    
+    width: -moz-available;
+
+    margin: 0;
     padding: 0 2rem 0 2rem;
 
     background-color: var(--color-sub);
