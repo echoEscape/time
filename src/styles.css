@@ -41,11 +41,6 @@ app-root {
   height: 100%;
 }
 
-app-root {
-  display: flex;
-  flex-direction: row;
-}
-
 p,
 h1,
 h2 {
