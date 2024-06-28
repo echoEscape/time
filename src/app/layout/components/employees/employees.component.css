@@ -1,0 +1,34 @@
+main{
+    padding: 0 2rem 0 2rem;
+}
+
+h1{
+    color: #505050;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.5rem 0.5em 0 0;
+    overflow: hidden;
+}
+
+thead, tbody{
+    height: 2rem;
+    font-family: "Manrope", sans-serif;
+}
+
+thead{
+    color: white;
+    font-size:large;
+    
+    background-color: #005582;
+}
+
+tbody tr{
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+td{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
