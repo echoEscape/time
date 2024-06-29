@@ -4,19 +4,29 @@
     <table>
         <thead>
             <tr>
-                <td>Name</td>
-                <td>Abteilung</td>
-                <td>System</td>
-                <td>Status</td>
+                <td id="header-pID">PersoNr.</td>
+                <td id="header-name">Name</td>
+                <td id="header-department">Abteilung</td>
+                <td id="header-tsystem">System</td>
+                <td id="header-flex">FLEX</td>
+                <td id="header-azk">AZK</td>
+                <td id="header-zerolimit">Nulllinie</td>
+                <td id="header-status">Status</td>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Lorem Ipsum</td>
-                <td>P12-01</td>
-                <td>Flex</td>
-                <td>Anwesend</td>
-            </tr>
+            @for(employee of employees; track employee.id){
+                <tr>
+                    <td class="data-pID">{{ employee.pID }}</td>
+                    <td class="data-name">{{ employee.name }}</td>
+                    <td class="data-department">{{ employee.department }}</td>
+                    <td class="data-tsystem">{{ employee.system }}</td>
+                    <td class="data-flex">{{ employee.flex }}</td>
+                    <td class="data-azk">{{ employee.azk }}</td>
+                    <td class="data-zerolimit">{{ employee.zerolimit }}</td>
+                    <td class="data-status">{{ employee.status }}</td>
+                </tr>
+            }
         </tbody>
     </table>
 </main>
