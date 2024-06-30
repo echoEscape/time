@@ -1,5 +1,6 @@
-import { Component, inject} from '@angular/core';
-import { EmployeeService } from '../../../services/employee.service';
+import { Component, OnInit} from '@angular/core';
+import { Employee } from './shared/employee.model';
+import { EmployeeService } from './shared/employee.service';
 
 @Component({
   selector: 'app-employees',
@@ -10,9 +11,13 @@ import { EmployeeService } from '../../../services/employee.service';
 })
 
 export class EmployeesComponent{
-  private readonly employeeService = inject(EmployeeService);
-  readonly employees = this.employeeService.getEmployeeList();
+  employees: Employee[] = [];
 
+  constructor(private employeeSerivce: EmployeeService){}
+
+  ngOnInit(): void {
+    this.employeeSerivce.getEmployees().then((employees) => (this.employees = employees));
+  }
 }
 
 
