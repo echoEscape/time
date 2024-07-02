@@ -9,5 +9,5 @@ import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angul
   styleUrl: './navigation.component.css',
 })
 export class NavigationComponent {
-  nav_exp = false;
+  nav_hidden = true;
 }

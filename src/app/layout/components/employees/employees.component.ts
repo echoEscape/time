@@ -23,6 +23,10 @@ export class EmployeesComponent{
   getEmployeesOnline(): void{
     console.log(this.employees);
     
+    for(let employee of this.employees){
+      console.log(employee);
+    }
+
     /*for(let key in this.employees){
       this.employees[key].forEach(function(employee){
         if(employee.status == "online"){

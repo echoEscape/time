@@ -1,9 +1,9 @@
-<nav (mouseover)="nav_exp = true" (mouseleave)="nav_exp = false">
+<nav (mouseover)="nav_hidden = false" (mouseleave)="nav_hidden = true">
   <ul>
     <li title="Alle Programme">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
         <span class="material-icons app-icon" id="nav-apps">apps</span>
-        @if(nav_exp){<p>Programme</p>}
+        <p [hidden]="nav_hidden">Programme</p>
       </a>
     </li>
 
@@ -11,31 +11,31 @@
     <li title="Übersicht">
       <a routerLink="/overview" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-overview">dashboard</span>
-        @if(nav_exp){<p>Übersicht</p>}
+        <p [hidden]="nav_hidden">Übersicht</p>
       </a>
     </li>
     <li title="Historie">
       <a routerLink="/history" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-history">fast_rewind</span>
-        @if(nav_exp){<p>Historie</p>}
+        <p [hidden]="nav_hidden">Historie</p>
       </a>
     </li>
     <li title="Schichtplanung">
       <a routerLink="/shiftplan" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-shiftplan">view_timeline</span>
-        @if(nav_exp){<p>Schichtplanung</p>}
+        <p [hidden]="nav_hidden">Schichtplanung</p>
       </a>
     </li>
     <li title="Urlaub">
       <a routerLink="/holiday" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-holiday">clear_day</span>
-        @if(nav_exp){<p>Urlaub</p>}
+        <p [hidden]="nav_hidden">Urlaub</p>
       </a>
     </li>
     <li title="Krankmeldungen">
       <a routerLink="/sickleave" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-sickleave">cardiology</span>
-        @if(nav_exp){<p>Krankmeldungen</p>}
+        <p [hidden]="nav_hidden">Krankmeldungen</p>
       </a>
     </li>
 
@@ -43,19 +43,19 @@
     <li title="Mitarbeiterübersicht">
       <a routerLink="/employees" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-employees">groups</span>
-        @if(nav_exp){<p>Mitarbeiter</p>}
+        <p [hidden]="nav_hidden">Mitarbeiter</p>
       </a>
     </li>
     <li title="Beantragungen">
       <a routerLink="/requests" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-requests">inventory</span>
-        @if(nav_exp){<p>Beantragungen</p>}
+        <p [hidden]="nav_hidden">Beantragungen</p>
       </a>
     </li>
     <li title="Verstöße">
       <a routerLink="/violations" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-violations">warning</span>
-        @if(nav_exp){<p>Verstöße</p>}
+        <p [hidden]="nav_hidden">Verstöße</p>
       </a>
     </li>
 
@@ -63,13 +63,13 @@
     <li title="Einstellungen">
       <a routerLink="/settings" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-settings">settings</span>
-        @if(nav_exp){<p>Einstellungen</p>}
+        <p [hidden]="nav_hidden">Einstellungen</p>
       </a>
     </li>
     <li title="Support">
       <a routerLink="/support" routerLinkActive="active">
         <span class="material-symbols-outlined nav-icon" id="nav-support">headset_mic</span>
-        @if(nav_exp){<p>Support</p>}
+        <p [hidden]="nav_hidden">Support</p>
       </a>
     </li>
   </ul>
